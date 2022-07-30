@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            float: left;
+        }
+        nav ul li a{
+            text-decoration: none; 
+            background-color:black;
+            display: block;
+            padding: 10px;
+        }
+        nav{
+            float: left;
+            width:100%;
+            background-color: black;
+            position:relative;
+        }
+        nav ul li a:hover, nav>ul>li:hover>a{
+            background-color: deepskyblue;
+        }
+        nav ul li ul.megamenu{
+            background: lightseagreen;
+            position: absolute;
+            width: 100%;
+            padding: 2% 0;
+            display: none;
+        }
+        nav ul li:hover ul.megamenu{
+            display: block;
+            left:0;
+        }
+        nav ul li:hover ul.megamenu h1{
+            padding: 10px;
+            font-size: 14px;
+            color: black;
+        }
+        nav ul li:hover ul.megamenu li{
+            width: 190px;
+            margin: 0px 40px;
+        }
+        nav ul li:hover ul.megamenu li a{
+            padding: 10px;
+        }
+        nav ul li:hover ul.megamenu li a:hover{
+            background: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Electronics</a>
+                <ul class="megamenu">
+                    <li>
+                        <h1>Mobiles</h1>
+                        <a href="#">MI</a>
+                        <a href="#">Samsung</a>
+                        <a href="#">POCO</a>
+                        <a href="#">RealMe</a>
+                        <a href="#">Oppo</a>
+                        <a href="#">Vivo</a>
+                        <a href="#">Nokia</a>
+                    </li>
+                    <li>
+                        <h1>Gaming PC's</h1>
+                        <a href="#">MSI</a>
+                        <a href="#">GgaByte</a>
+                        <a href="#">ASUS</a>
+                        <a href="#">Lenovo</a>
+                    </li>
+                    <li>
+                        <h1>Headphones</h1>
+                        <a href="#">Sony</a>
+                        <a href="#">Red Gear</a>
+                        <a href="#">Evo Fox</a>
+                        <a href="#">Skull Candy</a>
+                        <a href="#">Bose</a>
+                        <a href="#">Boat</a>
+                        <a href="#">Cosmic Byte</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="#">Men</a>
+                <ul class="megamenu">
+                    <li>
+                        <h1>OutFits</h1>
+                        <a href="#">Twills</a>
+                        <a href="#">Allen Solly</a>
+                    </li>
+                    <li>
+                        <h1>Jewellary</h1>
+                        <a href="#">Rings</a>
+                        <a href="#">Bracelets</a>
+                    </li>
+                    <li>
+                        <h1>Shoes</h1>
+                        <a href="#">Sneaker</a>
+                        <a href="#">Sport shoes</a>
+                        <a href="#">Casuals</a>
+                        <a href="#">Formal Shoes</a>
+                        <a href="#">Flip-Flops</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="#">Women</a>
+                <ul class="megamenu">
+                    <li>
+                        <h1>OutFits</h1>
+                        <a href="#">Twills</a>
+                        <a href="#">Allen Solly</a>
+                    </li>
+                    <li>
+                        <h1>Jewellary</h1>
+                        <a href="#">Rings</a>
+                        <a href="#">Bracelets</a>
+                        <a href="#">Ear RIngs</a>
+                        <a href="#">Bangles</a>
+                    </li>
+                    <li>
+                        <h1>Shoes</h1>
+                        <a href="#">Sneaker</a>
+                        <a href="#">Sport shoes</a>
+                        <a href="#">Casuals</a>
+                        <a href="#">Formal Shoes</a>
+                        <a href="#">Flip-Flops</a>
+                        <a href="#">High-heels</a>
+                        <a href="#">Sandals</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Children</a>
+                <ul class="megamenu">
+                    <li>
+                        <h1>OutFits</h1>
+                        <a href="#">Twills</a>
+                        <a href="#">Allen Solly</a>
+                    </li>
+                    <li>
+                        <h1>Shoes</h1>
+                        <a href="#">Sneaker</a>
+                        <a href="#">Sport shoes</a>
+                        <a href="#">Casuals</a>
+                        <a href="#">Formal Shoes</a>
+                        <a href="#">Flip-Flops</a>
+                        <a href="#">High-heels</a>
+                        <a href="#">Sandals</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Sports</a>
+                <ul class="megamenu">
+                    <li>
+                        <h1>Top Brands</h1>
+                        <a href="#">Puma</a>
+                        <a href="#">Adidas</a>
+                        <a href="#">Reebok</a>
+                        <a href="#">Fila</a>
+                        <a href="#">Nike</a>
+                    </li>
+                    <li>
+                        <h1>Accessories</h1>
+                        <a href="#">Gym Bags</a>
+                        <a href="#">Watches</a>
+                        <a href="#">Back Packs</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="#">Books</a>
+                <ul class="megamenu">
+                    <li>
+                        <h1>Book Types</h1>
+                        <a href="#">Fictional</a>
+                        <a href="#">Action</a>
+                        <a href="#">Romantic</a>
+                        <a href="#">Real Story</a>
+                        <a href="#">Children's Books</a>
+                        <a href="#">School Text Books</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
